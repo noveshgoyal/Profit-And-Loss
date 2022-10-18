@@ -52,6 +52,7 @@ export default function App() {
       <h1>Profit or Loss</h1>
       <label htmlFor="initial ">Initial Price of the Stock:</label>
       <input
+        min={0}
         id="initial"
         type="number"
         placeholder="Initial Price"
@@ -59,6 +60,7 @@ export default function App() {
       />
       <label htmlFor="stocks-qty">No. of Stocks:</label>
       <input
+        min={0}
         id="stocks-qty"
         type="number"
         placeholder="Qty. of stocks"
@@ -66,6 +68,7 @@ export default function App() {
       />
       <label htmlFor="current">Current Price of the Stock:</label>
       <input
+        min={0}
         id="current"
         type="number"
         placeholder="new price"
